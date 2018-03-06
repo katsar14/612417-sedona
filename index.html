@@ -5,10 +5,13 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
 
+  <body>
+    <div class="container">
     <header class="main-header">
-      <a class="main-header-logo"><img src="img/index-logo.svg" width="200" height="100" alt="Логотип сайта Седоны"></a>
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" width="200" height="100" alt="Логотип сайта Седоны">
+      </a>
       <nav class="main-nav">
         <ul class="site-nav">
           <li><a href="info.html">Информация</a></li>
@@ -19,21 +22,31 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
 
       <h1 class="visually-hidden">Сайт города Седона</h1>
 
-      <section class="intro">
-        <p class="slogan">Седона - небольшой городок в Калифорнии, заслуживающий большего!</p>
+      <section class="hero">
+        <img src="img/greeting.png" alt="Welcome to Sedona!" width="458" height="352">      
+      </section>
+
+      <section class="promo">
+        <p class="promo-slogan">Седона - небольшой городок в Калифорнии, заслуживающий большего!</p>
+        <p class="promo-advantages">Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</p>
       </section>
 
       <section class="features">
-        <h2>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньон!</h2>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+
         <div class="feature">
-          <h3>Настоящий городок</h3>
-          <span> №1 </span>
-          <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img src="img/street.png" width="300" height="100" alt="Улица Седоны">
+          <div class="feature-content">
+            <h3>Настоящий городок</h3>
+            <span> №1 </span>
+            <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="feature-image">
+            <img src="img/street.jpg" width="800" height="401" alt="Улица Седоны">
+          </div>
         </div>
 
         <ul class="feature-list">
@@ -44,18 +57,22 @@
           <li class="feature-item">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
+          </li>
           <li class="feature-item">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+          </li>
+        </ul>
 
         <div class="feature">
-          <h3>Там есть мост дьявола</h3>
-          <span> №2 </span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          <img src="img/bridge.png" width="300" height="100" alt="Мост дьявола">
+          <div class="feature-image">
+            <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
+          </div>
+          <div class="feature-info">
+            <h3>Там есть мост дьявола</h3>
+            <span> №2 </span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </div>
 
         <ul class="features-list">
@@ -85,13 +102,14 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="btn search-toggle">Поиск гостиницы в Седоне</button>
-        <span class="map"></span>
+        <div class="modal-search">
+            <!-- форма поиска-->
+        </div>
       </section>
 
-      <section class="modal-search">
-        <!-- форма поиска-->
+      <section class="map">
+        
       </section>
-
     </main>
 
     <footer class="main-footer">
@@ -106,6 +124,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="copiright-link"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="100" height="50"></a>
       </p>
     </footer>
+  </div>
 
   </body>
 </html>
