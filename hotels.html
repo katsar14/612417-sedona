@@ -6,6 +6,7 @@
   <title>Гостиницы</title>
 </head>
 <body>
+  <div class="container">
   <header class="main-header">
     <a class="main-header-logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седоны"></a>
     <nav class="main-nav">
@@ -18,13 +19,59 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
 
     <h1 class="visually-hidden">Гостиницы Седоны</h1>
 
     <section class="filters">
-        <h2 class="visually-hidden">Фильтры гостиниц</h2>
-      <!-- форма -->
+      <h2 class="visually-hidden">Фильтры гостиниц</h2>
+      <form action="http://echo.htmlacademy.ru" method="post" class="filters-form">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+            <ul class="filters-list">
+              <li class="filters-item">
+                <input type="checkbox" name="pool" id="pool-field" checked>
+                <label for="pool-field">Бассейн</label>
+              </li>
+              <li class="filters-item">
+                <input type="checkbox" name="parking" id="parking-field">
+                <label for="parking-field">Парковка</label>
+              </li>
+              <li class="filters-item">
+                <input type="checkbox" name="wi-fi" id="wi-fi-field">
+                <label for="wi-fi-field">Wi-Fi</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Тип жилья:</legend>
+              <ul class="filters-list">
+                <li class="filters-item">
+                  <input type="checkbox" name="hotel" id="hotel-field" checked>
+                  <label for="hotel-field">Гостиница</label>
+                </li>
+                <li class="filters-item">
+                  <input type="checkbox" name="motel" id="motel-field" checked>
+                  <label for="motel-field">Мотель</label>
+                </li>
+                <li class="filters-item">
+                  <input type="checkbox" name="apartment" id="apartment-field" checked>
+                  <label for="apartment-field">Апартаменты</label>
+                </li>
+              </ul>
+          </fieldset>
+          <div class="filters-cost">
+            <label for="cost-field">Стоимость в сутки:</label>
+            <p class="cost-range">
+              <span>От 0</span> 
+              <span>До 3000</span>
+            </p>
+            <p class="cost-input">
+              <input type="range" id="cost-field" name="cost">
+            </p>
+            <button type="submit" class="btn">Показать</button>
+          </div>
+      </form>
     </section>
 
     <div class="search-results">
@@ -37,8 +84,8 @@
           <li class="sorting-item"><a href="#">По рейтингу</a></li>
         </ul>
         <ul class="rusults-presentation-list">
-          <li class="rusults-presentation-item"><a href="#"></a></li>
-          <li class="rusults-presentation-item"><a href="#"></a></li>          
+          <li class="rusults-presentation-item"><a href="#">По возрастанию</a></li>
+          <li class="rusults-presentation-item"><a href="#">По убыванию</a></li>          
         </ul>
       </div>
     </div>
@@ -99,17 +146,18 @@
   </main>
 
   <footer class="main-footer">
-    <p class=footer-tag><a href="#">#visitsedona</a></p>
-    <ul class="socials-list">
-      <li class="socials-item"><a href="#" class="socials-link socials-link-twitter">Twitter</a></li>
-      <li class="socials-item"><a href="#" class="socials-link socials-link-facebook">Facebook</a></li>
-      <li class="socials-item"><a href="#" class="socials-link socials-link-youtube">Youtube</a></li>
-    </ul>
-    <p class="footer-copyright">
-      <span class="copyright-info">Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="copiright-link"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115" height="41"></a>
-    </p>
-  </footer>
+      <p class=footer-tag><a href="#">#visitsedona</a></p>
+      <ul class="socials-list">
+        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter" aria-label="Twitter"></a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook" aria-label="Facebook"></a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube" aria-label="Youtube"></a></li>
+      </ul>
+      <p class="footer-copyright">
+        <span class="copyright-info">Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copiright-link"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115" height="41"></a>
+      </p>
+    </footer>
+  </div>
 
 </body>
 </html>

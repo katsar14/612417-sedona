@@ -101,23 +101,49 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="btn search-toggle">Поиск гостиницы в Седоне</button>
+        <button class="btn btn-search-toggle">Поиск гостиницы в Седоне</button>
         <div class="modal-search">
-            <!-- форма поиска-->
+            <form action="http://echo.htmlacademy.ru" method="post" class="search-form">
+              <p>
+                <label for="checkin-date-field">Дата заезда:</label>
+                <input type="text" id="checkin-date-field" name="checkin-date" placeholder="24 апреля 2017">
+                <button type="button" class="search-calendar" aria-label="Выбрать дату"></button>
+              </p>
+              <p>
+                <label for="checkout-date-field">Дата выезда:</label>
+                <input type="text" id="checkout-date-field" name="checkout-date" placeholder="4 июля 2017">
+                <button type="button" class="search-calendar-icon" aria-label="Выбрать дату"></button>
+              </p>
+              <div class="search-guests-number">
+                <p>                  
+                  <label for="adult-guests-field">Взрослые:</label>
+                  <button type="button" class="search-minus-icon" aria-label="Добавть 1"></button>
+                  <input type="number" name="adult-guests-number" id="adult-guests-field" placeholder="2">
+                  <button type="button" class="search-plus-icon" aria-label="Удалить 1"></button>
+                </p>
+                <p>                  
+                  <label for="children-guests-field">Дети:</label>
+                  <button type="button" class="search-minus-icon" aria-label="Удалить 1"></button>
+                  <input type="number" name="adult-guests-number" id="adult-guests-field" placeholder="0">
+                  <button type="button" class="search-plus-icon" aria-label="Добавть 1"></button>
+                </p>
+              </div>
+              <button type="submit">Найти</button>
+            </form>
         </div>
       </section>
 
       <section class="map">
-        
+
       </section>
     </main>
 
     <footer class="main-footer">
       <p class=footer-tag><a href="#">#visitsedona</a></p>
       <ul class="socials-list">
-        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter">Twitter</a></li>
-        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook">Facebook</a></li>
-        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube">Youtube</a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter" aria-label="Twitter"></a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook" aria-label="Facebook"></a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube" aria-label="Youtube"></a></li>
       </ul>
       <p class="footer-copyright">
         <span class="copyright-info">Website by</span>
