@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гостиницы</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
@@ -61,7 +64,7 @@
               </ul>
           </fieldset>
           <div class="filters-cost">
-            <label for="cost-field">Стоимость в сутки:</label>
+            <label for="cost-field">Стоимость в сутки (Р):</label>
             <p class="cost-range">
               <span>От 0</span> 
               <span>До 3000</span>
@@ -83,9 +86,9 @@
           <li class="sorting-item"><a href="#">По типу</a></li>
           <li class="sorting-item"><a href="#">По рейтингу</a></li>
         </ul>
-        <ul class="rusults-presentation-list">
-          <li class="rusults-presentation-item"><a href="#">По возрастанию</a></li>
-          <li class="rusults-presentation-item"><a href="#">По убыванию</a></li>          
+        <ul class="results-presentation-list">
+          <li class="results-presentation-item"><a href="#" aria-label="По возрастанию"></a></li>
+          <li class="results-presentation-item-current"><a href="#" aria-label="По убыванию"></a></li>          
         </ul>
       </div>
     </div>
@@ -98,7 +101,7 @@
             <img src="img/amara.jpg" alt="Гостиница 'Amara resort & SPA'" class="hotel-photo" width="135" height="90">
           </div>
           <div class="hotel-info">
-            <h3 class="hotel-name">Amara resort & SPA</h3>
+            <h3 class="hotel-name"><a href="#">Amara resort & SPA</a></h3>
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">от 4000 р.</span>
             <a href="#" class="btn btn-more">Подробнее</a>
@@ -114,7 +117,7 @@
             <img src="img/desert.jpg" alt="'Мотель 'Desert Quail Inn'" class="hotel-photo" width="135" height="90">
           </div>
           <div class="hotel-info">
-            <h3 class="hotel-name">Desert Quail Inn</h3>
+            <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
             <span class="hotel-type">Мотель</span>
             <span class="hotel-price">от 3000 р.</span>
             <a href="#" class="btn btn-more">Подробнее</a>
@@ -130,7 +133,7 @@
               <img src="img/villas.jpg" alt="'Апартаменты 'Villas At Poco Diablo'" class="hotel-photo" width="135" height="90">
             </div>
             <div class="hotel-info">
-              <h3 class="hotel-name">Villas At Poco Diablo</h3>
+              <h3 class="hotel-name"><a href="#">Villas At Poco Diablo</a></h3>
               <span class="hotel-type">Апартаменты</span>
               <span class="hotel-price">от 2000 р.</span>
               <a href="#" class="btn btn-more">Подробнее</a>
@@ -148,9 +151,9 @@
   <footer class="main-footer">
       <p class=footer-tag><a href="#">#visitsedona</a></p>
       <ul class="socials-list">
-        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter" aria-label="Twitter"></a></li>
-        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook" aria-label="Facebook"></a></li>
-        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube" aria-label="Youtube"></a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter" aria-label="Twitter">Twitter</a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook" aria-label="Facebook">Facebook</a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube" aria-label="Youtube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <span class="copyright-info">Website by</span>

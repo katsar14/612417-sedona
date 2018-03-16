@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -26,8 +28,8 @@
 
       <h1 class="visually-hidden">Сайт города Седона</h1>
 
-      <section class="hero">
-        <img src="img/greeting.png" alt="Welcome to the gorgeous Sedona!" width="458" height="352">      
+      <section class="banner">
+        <img src="img/banner-text.png" alt="Welcome to the gorgeous Sedona!" width="458" height="352">      
       </section>
 
       <section class="promo">
@@ -68,7 +70,7 @@
           <div class="feature-image">
             <img src="img/bridge.jpg" width="800" height="400" alt="Фотография моста дьявола">
           </div>
-          <div class="feature-info">
+          <div class="feature-content">
             <h3>Там есть мост дьявола</h3>
             <span> №2 </span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -96,39 +98,39 @@
 
       <section class="reservation">
         <h2 class="visually-hidden">Забронировать гостиницу в Седоне</h2>
-        <p>Заинтересовались?</p>
-        <p>
+        <p class="reservation-question">Заинтересовались?</p>
+        <p class="reservation-text">
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="btn btn-search-toggle">Поиск гостиницы в Седоне</button>
+        <button class="search-btn search-btn-toggle">Поиск гостиницы в Седоне</button>
         <div class="modal-search">
             <form action="http://echo.htmlacademy.ru" method="post" class="search-form">
               <p>
                 <label for="checkin-date-field">Дата заезда:</label>
                 <input type="text" id="checkin-date-field" name="checkin-date" placeholder="24 апреля 2017">
-                <button type="button" class="search-calendar" aria-label="Выбрать дату"></button>
+                <button type="button" class="search-btn-calendar" aria-label="Выбрать дату"></button>
               </p>
               <p>
                 <label for="checkout-date-field">Дата выезда:</label>
                 <input type="text" id="checkout-date-field" name="checkout-date" placeholder="4 июля 2017">
-                <button type="button" class="search-calendar-icon" aria-label="Выбрать дату"></button>
+                <button type="button" class="search-btn-calendar" aria-label="Выбрать дату"></button>
               </p>
               <div class="search-guests-number">
                 <p>                  
                   <label for="adult-guests-field">Взрослые:</label>
-                  <button type="button" class="search-minus-icon" aria-label="Добавть 1"></button>
+                  <button type="button" class="search-btn search-btn-minus" aria-label="Удалить 1"></button>
                   <input type="number" name="adult-guests-number" id="adult-guests-field" placeholder="2">
-                  <button type="button" class="search-plus-icon" aria-label="Удалить 1"></button>
+                  <button type="button" class="search-btn search-btn-plus" aria-label="Добавть 1"></button>
                 </p>
                 <p>                  
                   <label for="children-guests-field">Дети:</label>
-                  <button type="button" class="search-minus-icon" aria-label="Удалить 1"></button>
+                  <button type="button" class="search-btn search-btn-minus" aria-label="Удалить 1"></button>
                   <input type="number" name="adult-guests-number" id="adult-guests-field" placeholder="0">
-                  <button type="button" class="search-plus-icon" aria-label="Добавть 1"></button>
+                  <button type="button" class="search-btn search-btn-plus" aria-label="Добавть 1"></button>
                 </p>
               </div>
-              <button type="submit">Найти</button>
+              <button type="submit" class="search-btn search-btn-submit">Найти</button>
             </form>
         </div>
       </section>
@@ -141,9 +143,9 @@
     <footer class="main-footer">
       <p class=footer-tag><a href="#">#visitsedona</a></p>
       <ul class="socials-list">
-        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter" aria-label="Twitter"></a></li>
-        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook" aria-label="Facebook"></a></li>
-        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube" aria-label="Youtube"></a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-twitter" aria-label="Twitter">Twitter</a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-facebook" aria-label="Facebook">Facebook</a></li>
+        <li class="socials-item"><a href="#" class="socials-link socials-link-youtube" aria-label="Youtube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <span class="copyright-info">Website by</span>
