@@ -137,6 +137,10 @@ a {
     background-color: #503e33;
 }   
 
+.modal-search {
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.9); 
+}
+
 .search-form {
     line-height: 26px;
     color: #000000;
@@ -229,6 +233,10 @@ a {
     background-repeat: no-repeat;
  }
 
+ .filters-form fieldset {
+     border: none;
+ }
+
 .filters-list {
     list-style: none;
 }
@@ -242,6 +250,21 @@ a {
     font-size: 16px;
     font-weight: 700;
  }
+
+.filters-btn-submit {
+    font: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.filters-btn-submit:hover {
+    color: #000000;
+
+    background-color: #ffffff;
+}
 
  .search-results p {
     font-size: 21px;
