@@ -68,6 +68,7 @@ input[type="checkbox"].visually-hidden {
 /* header */
 .main-header {
   position: relative;
+  z-index: 2;
 }
 
 .main-header-logo {
@@ -76,6 +77,9 @@ input[type="checkbox"].visually-hidden {
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
+
+  width: 138px; 
+  height: 70px;
 }
 
 .main-nav {
@@ -133,26 +137,22 @@ input[type="checkbox"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.banner {    
+.banner { 
+  min-height: 506px;
+  position: relative;
+
   background-color: #e0eef6;
   background: url("../img/header-shape.png") 0 100% no-repeat,
-              url("../img/banner-background.jpg") 0 -56px no-repeat;
-
-  min-height: 506px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+              url("../img/banner-background.jpg") 0 -56px no-repeat;  
 }
 
-.main-header-logo {
-  width: 138px; 
-  height: 70px;
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .promo {
@@ -438,11 +438,11 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-checkin label {
-  margin-right: 20px;
+  margin-right: 17px;
 }
 
 .search-checkout label {
-  margin-right: 16px;
+  margin-right: 14px;
 }
 
 .search-btn-calendar {
@@ -1241,6 +1241,5 @@ input[type="checkbox"].visually-hidden {
 .inner-page .main-footer {
   position: static;
 }
-
 
 
