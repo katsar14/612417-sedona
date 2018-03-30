@@ -5,7 +5,7 @@
   <title>Гостиницы</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="inner-page">
@@ -14,10 +14,10 @@
     <a class="main-header-logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седоны"></a>
     <nav class="main-nav">
       <ul class="site-nav">
-        <li class="nav-item-info"><a href="info.html">Информация</a></li>
-        <li class="nav-item-photo"><a href="photo-video.html">Фото и видео</a></li>
-        <li class="nav-item-map"><a href="map.html">Карта штата</a></li>
-        <li class="nav-item-hotels nav-item-current"><a>Гостиницы</a></li>
+        <li class="nav-item nav-item-info"><a href="info.html">Информация</a></li>
+        <li class="nav-item nav-item-photo"><a href="photo-video.html">Фото и видео</a></li>
+        <li class="nav-item nav-item-map"><a href="map.html">Карта штата</a></li>
+        <li class="nav-item nav-item-hotels nav-item-current"><a>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -33,15 +33,15 @@
           <legend>Инфраструктура:</legend>
             <ul class="filters-list">
               <li class="filters-item">
-                <input class="visually-hidden" type="checkbox" name="pool" id="pool-field" checked>
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="pool" id="pool-field" checked>
                 <label for="pool-field">Бассейн</label>
               </li>
               <li class="filters-item">
-                <input class="visually-hidden" type="checkbox" name="parking" id="parking-field">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="parking" id="parking-field">
                 <label for="parking-field">Парковка</label>
               </li>
               <li class="filters-item">
-                <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi-field">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="wi-fi" id="wi-fi-field">
                 <label for="wi-fi-field">Wi-Fi</label>
               </li>
             </ul>
@@ -50,15 +50,15 @@
             <legend>Тип жилья:</legend>
               <ul class="filters-list">
                 <li class="filters-item">
-                  <input class="visually-hidden" type="checkbox" name="hotel" id="hotel-field" checked> 
+                  <input class="visually-hidden filters-checkbox" type="checkbox" name="hotel" id="hotel-field" checked> 
                   <label for="hotel-field">Гостиница</label>
                 </li>
                 <li class="filters-item">                  
-                  <input class="visually-hidden" type="checkbox" name="motel" id="motel-field" checked>
+                  <input class="visually-hidden filters-checkbox" type="checkbox" name="motel" id="motel-field" checked>
                   <label for="motel-field">Мотель</label>
                 </li>
                 <li class="filters-item">
-                  <input class="visually-hidden" type="checkbox" name="apartment" id="apartment-field" checked>
+                  <input class="visually-hidden filters-checkbox" type="checkbox" name="apartment" id="apartment-field" checked>
                   <label for="apartment-field">Апартаменты</label>
                 </li>
               </ul>
@@ -88,14 +88,14 @@
       <div class="sorting">
         <h3>Сортировка:</h3>
         <ul class="sorting-list">
-          <li class="sorting-item-current"><a>По цене</a></li>
+          <li class="sorting-item-current"><a href="#">По цене</a></li>
           <li class="sorting-item"><a href="#">По типу</a></li>
           <li class="sorting-item"><a href="#">По рейтингу</a></li>
         </ul>
       </div>  
       <ul class="results-presentation-list">
-        <li class="results-presentation-item"><a href="#" aria-label="По возрастанию"></a></li>
-        <li class="results-presentation-item-current"><a aria-label="По убыванию"></a></li>          
+        <li class="results-presentation-item"><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+        <li class="results-presentation-item-current"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>          
       </ul>      
     </div>
 
@@ -120,10 +120,10 @@
           <div class="hotel-rating">
             <div class="hotel-category">
               <p class="visually-hidden">Категория отеля: 4 звезды</p>
-              <img src="img/star.svg" alt="Звезда" width="18" height="17">
-              <img src="img/star.svg" alt="Звезда" width="18" height="17">
-              <img src="img/star.svg" alt="Звезда" width="18" height="17">
-              <img src="img/star.svg" alt="Звезда" width="18" height="17">
+              <img src="img/star.svg" alt="" width="18" height="17">
+              <img src="img/star.svg" alt="" width="18" height="17">
+              <img src="img/star.svg" alt="" width="18" height="17">
+              <img src="img/star.svg" alt="" width="18" height="17">
             </div>
             <p class="hotel-rating-text">Рейтинг: 8,5</p>
           </div>          
@@ -146,9 +146,9 @@
           <div class="hotel-rating">
             <div class="hotel-category">
                 <p class="visually-hidden">Категория отеля: 3 звезды</p>
-                <img src="img/star.svg" alt="Звезда" width="18" height="17">
-                <img src="img/star.svg" alt="Звезда" width="18" height="17">
-                <img src="img/star.svg" alt="Звезда" width="18" height="17">
+                <img src="img/star.svg" alt="" width="18" height="17">
+                <img src="img/star.svg" alt="" width="18" height="17">
+                <img src="img/star.svg" alt="" width="18" height="17">
             </div>
             <p class="hotel-rating-text">Рейтинг: 8,9</p>
           </div>          
@@ -170,10 +170,10 @@
             </div>
             <div class="hotel-rating">
               <div class="hotel-category">
-                  <p class="visually-hidden">Категория отеля: 2 звезды</p>
-                  <img src="img/star.svg" alt="" width="18" height="17">
-                  <img src="img/star.svg" alt="" width="18" height="17">
-              </>
+                <p class="visually-hidden">Категория отеля: 2 звезды</p>
+                <img src="img/star.svg" alt="" width="18" height="17">
+                <img src="img/star.svg" alt="" width="18" height="17">
+              </div>
               <p class="hotel-rating-text">Рейтинг: 9.2</p>
             </div>          
           </li>       

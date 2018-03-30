@@ -12,7 +12,7 @@ button.addEventListener("click", function(evt){
 });
 
 form.addEventListener("submit", function(evt){
-    if(!checkIn.value || !checkOut.value || !adultNumber || !childrenNumber) {
-        evt.preventDefault();
-    }
+  if(!checkIn.value || !checkOut.value || !adultNumber || !childrenNumber) {
+      evt.preventDefault();
+  }
 });
